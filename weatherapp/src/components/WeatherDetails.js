@@ -3,11 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faUsers, faThermometerHalf, faSun, faMoon, faWind, faTint, faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const WeatherDetails = ({ weatherData, formattedSunriseTime, formattedSunsetTime }) => {
+
+  const currentDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
   return (
     <div className="content absolute top-[300px] w-screen flex flex-row justify-around">
       <div className="location h-[250px] w-[600px] bg-black bg-opacity-20 rounded-2xl flex flex-col justify-center items-center gap-[30px] text-white">
         <p className="text-[40px]"> {weatherData.city?.name} </p>
-        <p className="text-[20px]"><FontAwesomeIcon icon={faCalendarAlt} /> December 23, 2023</p>
+        <p className="text-[20px]"><FontAwesomeIcon icon={faCalendarAlt} /> {currentDate}</p>
         <p className="text-[20px]"><FontAwesomeIcon icon={faUsers} /> {weatherData.city?.population} </p>
       </div>
 
