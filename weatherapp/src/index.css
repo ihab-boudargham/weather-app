@@ -18,3 +18,158 @@
 .inputWithPlaceholderColor::placeholder {
   color: rgba(255, 255, 255, 0.819);
 }
+
+@media (max-width: 1286px) {
+.search {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+
+}
+.content {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.location {
+  height: 150px;
+  gap: 10px;
+}
+
+.api {
+  margin-left: 0;
+}
+
+}
+
+@media (max-width: 632px) {
+  .search {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  
+  }
+  .content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .location {
+    height: 150px;
+    gap: 10px;
+    width: 350px;
+  }
+
+  .details {
+    width: 350px;
+    height: 250px;
+  }
+
+  .details p {
+    margin-top: -20px;
+    margin-left: -50px ;
+    margin-right: -50px;
+  }
+
+  .wind-hu-pre {
+    margin-top: -20px;
+    margin-left: -50px ;
+    margin-right: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .wind-hu-pre, #wind, #humidity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+  }
+
+  #pressure {
+    display: flex;
+    margin-left: 25%;
+    gap: 4px;
+    align-items: center;
+    
+  }
+
+  .api {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 630px) and (max-height: 700px) {
+  .search {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  
+  }
+  .content {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .location {
+    height: 150px;
+    gap: 10px;
+    width: 350px;
+  }
+
+  .details {
+    width: 350px;
+    height: 210px;
+  }
+
+  .details p {
+    margin-top: -20px;
+    margin-left: -50px ;
+    margin-right: -50px;
+  }
+
+  .wind-hu-pre {
+    margin-top: -20px;
+    margin-left: -50px ;
+    margin-right: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .wind-hu-pre, #wind, #humidity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+  }
+
+  #pressure {
+    display: flex;
+    margin-left: 25%;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .api {
+    margin-left: 0;
+  }
+}
+
