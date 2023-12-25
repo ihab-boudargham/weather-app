@@ -21,7 +21,7 @@ const WeatherDetails = ({ weatherData, formattedSunriseTime, formattedSunsetTime
 
   return (
     <div className="content absolute top-[300px] w-screen flex flex-row justify-around">
-      <div className="location h-[250px] w-[600px] bg-white bg-opacity-30 rounded-2xl flex flex-col justify-center items-center gap-[30px] text-white">
+      <div className="location h-[250px] w-[600px] bg-black bg-opacity-20 rounded-2xl flex flex-col justify-center items-center gap-[30px] text-white">
         <div className="flex items-center">
           <span className='flex flex-row items-center gap-4'> 
             {getWeatherIcon(weatherCondition)} 
@@ -32,7 +32,7 @@ const WeatherDetails = ({ weatherData, formattedSunriseTime, formattedSunsetTime
         <p className="text-[20px]"><FontAwesomeIcon icon={faUsers} /> {weatherData.city?.population} </p>
       </div>
 
-      <div className="details h-[250px] w-[600px] bg-white bg-opacity-30 rounded-2xl px-[70px] text-white text-xl pt-[55px]">
+      <div className="details h-[250px] w-[600px] bg-black bg-opacity-20 rounded-2xl px-[70px] text-white text-xl pt-[55px]">
         <div className="temp-des flex justify-between right-0">
             <p id="temperature">
             <FontAwesomeIcon icon={faThermometerHalf} /> 
